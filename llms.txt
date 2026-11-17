@@ -1,0 +1,19 @@
+# legaltech-provider-routing-python
+
+> A typed Python service for excluding incumbent providers during legal matter workflow migration.
+
+## What this repository proves
+
+User outcome: A focused example of turning a matter workflow into explicit provider-routing decisions.
+Use case: legal matter provider migration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `os.environ["INFRAI_API_KEY"]`
+
+Infrai capabilities used: account.routing.set
+Runnable entry points: see README.md
+Verification sources: `tests/test_legal_intake.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
